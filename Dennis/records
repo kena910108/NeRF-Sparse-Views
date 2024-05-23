@@ -1,0 +1,53 @@
+preliminary:
+    1. sparse view traing 
+        -view dependence
+        -non view-independence (win)
+    
+    2. sparse view traing-how to add back view-dependence info
+        - directly add-back and finetune
+        - your proposed method (decouple view-depence)
+    
+    understand the code (especially on the nerf model part).
+    read decouple paper (clean nerf).
+
+    3. view-depedance color
+       color decoupling
+
+    more tricks for nerf: https://towardsdatascience.com/beyond-nerfs-part-two-83af2bd17d0
+
+clearn-NeRF:
+
+10/12:
+todo:
+1. create git
+2. SSIM, LPIPS (github)
+3. record the psnr of the final result
+4. auto set cuda device
+5. select sparse data
+    1. args set data number
+        1. be aware if data number > training number
+        2. -1 all
+    2. check i_train type
+    3. evenly select sparse data number
+
+6. change n_iter
+7. do sparse view training
+
+#change config
+1. auto set exp name
+2. training iter
+3. use_viewdirs
+
+ 
+ 
+
+findings:
+1. config file directly load in the code/configargparse.ArgumentParser()
+
+11/12
+1. change master to regularize
+2. select sepcific image for training
+3. reload image while training
+
+run 2
+run 3
